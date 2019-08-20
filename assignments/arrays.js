@@ -108,9 +108,13 @@ console.log(carModelsSorted);
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
 let carYears = [];
 
-for ( let i = 0; i < inventory.length; i++){
-  carYears.push(inventory[i].car_year);
-}
+// using .map
+carYears = inventory.map(x => x.car_year);
+
+// using for loop
+// for ( let i = 0; i < inventory.length; i++){
+//   carYears.push(inventory[i].car_year);
+// }
 
 console.log(carYears);
 
